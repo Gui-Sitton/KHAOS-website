@@ -1,45 +1,71 @@
-* {
+/* Cores da Identidade Visual */
+:root {
+    --background-color: #1e1e1e; /* Fundo escuro */
+    --accent-yellow: #ffcc00;    /* Amarelo para destaques */
+    --accent-blue: #3c88d1;      /* Azul para detalhes */
+    --text-color: #e0e0e0;       /* Texto em branco acinzentado */
+}
+
+/* Estilo Geral */
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-body {
-    color: #333;
-    background-color: #f4f4f9;
-}
-
+/* Cabeçalho */
 header {
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: var(--text-color);
     padding: 1rem;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    color: var(--accent-yellow);
+    font-size: 2rem;
 }
 
 nav a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     margin: 0 1rem;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: var(--accent-blue);
 }
 
+/* Seções */
 main {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
+.intro {
+    border-left: 4px solid var(--accent-yellow);
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Ícones e Elementos Abstratos */
+.icon-element {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--accent-yellow);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
     padding: 1rem;
     background: #333;
-    color: #fff;
+    color: var(--text-color);
 }
+
