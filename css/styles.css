@@ -1,0 +1,174 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2, p {
+    margin-bottom: 1rem;
+}
+
+/* Menu de Navegação */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #DC3E26;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Primeira Seção - Introdução */
+.introducao {
+    background-image: url('praia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.descricao {
+    max-width: 500px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-icon:hover {
+    color: #DC3E26;
+}
+
+/* Segunda Seção - Projetos */
+.projetos {
+    background-color: #f0f0f0;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.projeto {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+}
+
+.quadro {
+    background-color: #EDCD44;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.quadro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.linha-do-tempo {
+    margin-top: 3rem;
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.evento {
+    font-size: 1rem;
+}
+
+/* Terceira Seção - Contato */
+.contato {
+    background-color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contato button {
+    background-color: #DC3E26;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #C2311E;
+}
+
+/* Efeitos de animação */
+@keyframes onda {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+.onda {
+    animation: onda 1s ease-out;
+}
+
+
