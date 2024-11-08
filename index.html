@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio - Animação de Praia</title>
+  <title>Meu Portfólio - Fundo Marinho</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Fundo de Praia */
+    /* Estilo do Fundo Inspirado no Mar */
     body {
       margin: 0;
       overflow-x: hidden;
-      background: linear-gradient(to bottom, #81CAD6 30%, #EDCD44 80%, #DC3E26 100%);
+      background: url('image.png') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Playfair Display', serif;
       color: #333;
     }
@@ -28,70 +29,24 @@
       z-index: 1;
     }
 
-    /* Animação dos Pássaros */
-    .bird {
-      position: absolute;
-      width: 50px;
-      height: 30px;
-      background: transparent;
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      transform: rotate(-45deg);
-      animation: fly linear infinite;
+    /* Estilo das Seções para Sobrepor o Fundo */
+    .section {
+      background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para destacar o texto */
+      padding: 40px;
+      border-radius: 8px;
+      margin: 20px;
     }
 
-    .bird::before,
-    .bird::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 30px;
-      background: transparent;
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      transform: rotate(90deg);
-      top: 0;
+    .header, .footer {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
     }
 
-    /* Configuração dos Pássaros para diferentes posições e velocidades */
-    .bird-1 {
-      top: 10%;
-      left: -10%;
-      animation-duration: 10s;
-      animation-delay: 0s;
-    }
-
-    .bird-2 {
-      top: 20%;
-      left: -15%;
-      animation-duration: 15s;
-      animation-delay: 2s;
-    }
-
-    .bird-3 {
-      top: 25%;
-      left: -20%;
-      animation-duration: 12s;
-      animation-delay: 5s;
-    }
-
-    .bird-4 {
-      top: 40%;
-      left: -25%;
-      animation-duration: 20s;
-      animation-delay: 1s;
-    }
-
-    @keyframes fly {
-      0% {
-        transform: translateX(0) translateY(0) rotate(-45deg);
-      }
-      50% {
-        transform: translateX(100vw) translateY(-20px) rotate(-45deg);
-      }
-      100% {
-        transform: translateX(200vw) translateY(0) rotate(-45deg);
-      }
+    /* Efeito Parallax (Opcional) */
+    .parallax {
+      background-attachment: fixed;
     }
   </style>
 </head>
@@ -114,11 +69,11 @@
   </header>
 
   <!-- Banner Principal -->
-  <section id="home" class="hero">
-    <img src="C:\Users\Guilherme\OneDrive\Área de Trabalho\ft perfil.jpeg" alt="Foto de Guilherme Sitton" class="foto-perfil">
+  <section id="home" class="hero section">
+    <img src="minha-foto.jpg" alt="Foto de Guilherme Sitton" class="foto-perfil">
     <h2>Data Scientist</h2>
     <p>Transformando dados em insights estratégicos e soluções práticas.</p>
-    <p>Localização: Caxias do Sul, RS - Brasil]</p>
+    <p>Localização: [Cidade/Estado]</p>
     <a href="#projetos" class="cta-button">Veja Projetos</a>
   </section>
 
