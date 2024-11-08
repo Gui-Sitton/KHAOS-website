@@ -1,327 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Estilos para a seção de contato */
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: #101010;
-  color: #fff;
-}
-
-.contact-container {
-  display: flex;
-  max-width: 800px;
-  width: 100%;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.contact-form {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #2a2a2a;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #444;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #666;
-}
-
-.contact-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.contact-info .info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.contact-info .info-item i {
-  font-size: 20px;
-  color: #00e6ac;
-  margin-right: 10px;
-}
-
-.contact-info .info-item span {
-  color: #aaa;
-  font-size: 16px;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  font-size: 24px;
-  color: #aaa;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: #00e6ac;
-}
-
-    /* Estilo do Fundo Inspirado no Mar */
-    body {
-      margin: 0;
-      overflow-x: hidden;
-      background: url('https://images.unsplash.com/photo-1513553404607-988bf2703777?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Playfair Display', serif;
-      color: #333;
-    }
-
-    /* Estilo do Container */
-    .container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      z-index: 1;
-    }
-
-    /* Estilo das Seções para Sobrepor o Fundo */
-    .section {
-      background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para destacar o texto */
-      padding: 40px;
-      border-radius: 8px;
-      margin: 20px;
-      color: #fff;
-    }
-
-    .header, .footer {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    /* Links no Menu */
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    /* Estilo do Botão */
-    .cta-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    /* Efeito Parallax (Opcional) */
-    .parallax {
-      background-attachment: fixed;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Tema de Praia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Guilherme Sitton de Carvalho</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#educacao">Educação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Menu de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Banner Principal -->
-  <section id="home" class="hero section">
-    <img src="minha-foto.jpg" alt="Foto de Guilherme Sitton" class="foto-perfil">
-    <h2>Data Scientist</h2>
-    <p>Transformando dados em insights estratégicos e soluções práticas.</p>
-    <p>Localização: [Cidade/Estado]</p>
-    <a href="#projetos" class="cta-button">Veja Projetos</a>
-  </section>
+    <!-- Primeira Seção: Introdução -->
+    <section id="introducao" class="introducao">
+        <div class="container">
+            <img src="sua-imagem.jpg" alt="Foto" class="foto-perfil">
+            <div class="descricao">
+                <h1>Olá, sou [Seu Nome]</h1>
+                <p>Desenvolvedor Web com habilidades em HTML, CSS, JavaScript, e frameworks modernos. Apaixonado por criar soluções digitais que encantam os usuários e geram resultados.</p>
+                <p><strong>Conquistas:</strong> Desenvolvimento de vários sites responsivos, projetos open-source no GitHub, etc.</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/seu-usuario" target="_blank" class="social-icon">GitHub</a>
+            <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" class="social-icon">LinkedIn</a>
+            <a href="https://www.instagram.com/seu-usuario" target="_blank" class="social-icon">Instagram</a>
+            <a href="mailto:seu-email@example.com" class="social-icon">E-mail</a>
+        </div>
+    </section>
 
-  <!-- Seção Sobre -->
-  <section id="sobre" class="section">
-    <h2>Sobre Mim</h2>
-    <p>Sou um Data Scientist focado em transformar dados em decisões estratégicas e práticas. Tenho experiência com Python, Machine Learning, SQL, e ferramentas como Power BI e Pandas. Estou sempre em busca de novos desafios para aplicar minhas habilidades e expandir meu conhecimento em Inteligência Artificial e Análise de Dados.</p>
-  </section>
+    <!-- Segunda Seção: Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="projeto">
+            <div class="quadro">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <p>Descrição breve do Projeto 1.</p>
+            </div>
+        </div>
+        <div class="projeto">
+            <div class="quadro">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <p>Descrição breve do Projeto 2.</p>
+            </div>
+        </div>
+        <div class="linha-do-tempo">
+            <hr>
+            <div class="timeline">
+                <div class="evento">
+                    <p>2024 - Graduado em Desenvolvimento Web</p>
+                </div>
+                <div class="evento">
+                    <p>2023 - Estágio em Desenvolvimento Front-End</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Seção Habilidades -->
-  <section id="habilidades" class="section">
-    <h2>Habilidades</h2>
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">Machine Learning</div>
-      <div class="skill">SQL</div>
-      <div class="skill">Pandas</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Redes Neurais</div>
-      <div class="skill">Oracle</div>
-      <div class="skill">ETL</div>
-    </div>
-  </section>
-
-  <!-- Seção Projetos -->
-  <section id="projetos" class="section">
-    <h2>Projetos</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Hackathon - Inteligência Artificial</h3>
-        <p>Primeiro lugar em Hackathon da Tripleten, com um projeto de IA para previsão de atrasos em voos.</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-      <div class="project-card">
-        <h3>Dashboard Interativo - Streamlit</h3>
-        <p>Construção de um dashboard interativo com análise de dados de vendas e previsões.</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-      <div class="project-card">
-        <h3>Previsão de Atrasos de Voos</h3>
-        <p>Projeto de IA para prever atrasos em voos usando dados históricos de aeroportos.</p>
-        <a href="#">Saiba Mais</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Experiência -->
-  <section id="experiencia" class="section">
-    <h2>Experiência Profissional</h2>
-    <div class="experiencia-item">
-      <h3>Representante de Vendas Internacional - Morlub Tecnologia Química</h3>
-      <p>Atuo na prospecção de clientes internacionais e análise de mercados externos para expandir e adaptar estratégias comerciais.</p>
-    </div>
-    <div class="experiencia-item">
-      <h3>Statistician - Genius Sport</h3>
-      <p>Responsável pela coleta e análise em tempo real de dados de partidas de futebol, garantindo precisão nas métricas de desempenho.</p>
-    </div>
-  </section>
-
-  <!-- Seção Educação -->
-  <section id="educacao" class="section">
-    <h2>Formação Acadêmica</h2>
-    <div class="educacao-item">
-      <h3>Ciências da Computação</h3>
-      <p>Faculdade da Serra Gaúcha (2023 - 2026)</p>
-    </div>
-    <div class="educacao-item">
-      <h3>General Studies</h3>
-      <p>Patrick and Henry Community College, EUA (2021 - 2022)</p>
-    </div>
-    <div class="educacao-item">
-      <h3>Curso de Ciência de Dados</h3>
-      <p>Tripleten (2023), com mais de 15 projetos simulando situações profissionais.</p>
-    </div>
-  </section>
-
-  <!-- Seção Contato -->
-<section id="contato" class="section contact-section">
-  <h2>Contato</h2>
-  <div class="contact-container">
-    
-    <!-- Formulário de Contato -->
-    <div class="contact-form">
-      <p>Tem alguma pergunta ou quer trabalhar junto? Deixe seus dados e entrarei em contato assim que possível.</p>
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Nome" required>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-
-    <!-- Informações de Contato -->
-    <div class="contact-info">
-      <div class="info-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>Localização: Timisoara, Romania</span>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-phone"></i>
-        <span>Telefone: +40 738 479 198</span>
-      </div>
-      <div class="info-item">
-        <i class="fas fa-envelope"></i>
-        <span>Email: muscamihailp@gmail.com</span>
-      </div>
-
-      <!-- Ícones das Redes Sociais -->
-      <div class="social-icons">
-        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Guilherme Sitton de Carvalho</p>
-  </footer>
+    <!-- Terceira Seção: Contato -->
+    <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <form action="enviar-mensagem.php" method="POST">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
 </body>
 </html>
+
 
