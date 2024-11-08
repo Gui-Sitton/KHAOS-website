@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('images/joel-vodell-8Ogfqvw15Rg-unsplash.jpg') no-repeat center center fixed;
+    background: url('..images/joel-vodell-8Ogfqvw15Rg-unsplash.jpg') no-repeat center center fixed;
     background-size: cover; /* Imagem de praia cobre todo o site */
     color: #333;
     display: flex;
