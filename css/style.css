@@ -36,14 +36,14 @@ body, html {
 }
 
 .cidade {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     margin-bottom: 5px;
 }
 
 .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 0%; /* Deixa a foto redonda */
     border: 2px solid black; /* Borda para destacar a foto */
 }
@@ -54,7 +54,7 @@ body, html {
 }
 
 .center-content h1 {
-    font-size: 8em; /* Ajuste conforme necessário */
+    font-size: 5em; /* Ajuste conforme necessário */
     margin: 0;
 }
 
