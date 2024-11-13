@@ -1,5 +1,4 @@
-/* Estilos básicos para layout contínuo e carrosséis */
-/* Estilos básicos para layout contínuo */
+/* Estilos básicos */
 body, html {
     margin: 0;
     padding: 0;
@@ -15,59 +14,73 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Página 1 com a primeira imagem de fundo */
 .section.intro {
     background: url('../assets/images/background1.jpg') no-repeat center center;
     background-size: cover;
-    color: black; /* Cor do texto para contraste */
-    position: relative;
+    color: black;
 }
 
 /* Foto e cidade no canto superior esquerdo */
 .top-left {
     position: absolute;
-    top: 80px;
-    left: 80px;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .cidade {
-    font-size: 20px;
+    font-size: 1.2em;
     color: black;
     margin-bottom: 5px;
 }
 
 .profile-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 0%; /* Deixa a foto redonda */
-    border: 2px solid black; /* Borda para destacar a foto */
+    width: 150px;
+    height: 150px;
+    border-radius: 5px; /* Ajuste para bordas quadradas */
+    border: 2px solid black;
 }
 
 /* Nome e título centralizados */
 .center-content {
     text-align: center;
-    position: absolute; /* Posiciona em relação ao contêiner pai */
-    top: 0; /* Coloca no topo */
-    left: 50%; /* Posiciona horizontalmente no centro */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    margin-top: 20px; /* Ajuste conforme necessário para espaçamento */
+    max-width: 80%; /* Limita largura para centralizar melhor */
+    margin-top: 100px; /* Ajuste para espaçamento conforme necessário */
 }
 
 .center-content h1 {
-    font-size: 5em; /* Ajuste conforme necessário */
+    font-size: 3em; /* Ajuste conforme necessário */
     margin: 0;
 }
 
 .center-content p {
-    font-size: 5em;
-    margin: 5px 0 0;
+    font-size: 2em;
+    margin: 10px 0;
 }
 
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
 /* Páginas 2 a 5 com a segunda imagem de fundo */
 .section.secondary {
     background: url('../assets/images/background2.jpg') no-repeat center center;
