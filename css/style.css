@@ -13,12 +13,13 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-/* Página 1 com a primeira imagem de fundo */
 .section.intro {
+    background-color: red; /* para testar se a classe está aplicando */
     background: url('../assets/images/background1.jpg') no-repeat center center;
     background-size: cover;
-    color: white; /* Cor do texto para contraste */
+    color: white;
 }
+
 /* Páginas 2 a 5 com a segunda imagem de fundo */
 .section.secondary {
     background: url('../assets/images/background2.jpg') no-repeat center center;
