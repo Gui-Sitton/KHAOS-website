@@ -21,31 +21,31 @@ body, html {
 .section.intro {
     background: url('../assets/images/background1.jpg') no-repeat center center;
     background-size: cover;
-    color: white; /* Cor do texto para contraste */
+    color: black; /* Cor do texto para contraste */
     position: relative;
 }
 
 /* Foto e cidade no canto superior esquerdo */
 .top-left {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 100px;
+    left: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .cidade {
-    font-size: 14px;
-    color: white;
+    font-size: 30px;
+    color: black;
     margin-bottom: 5px;
 }
 
 .profile-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; /* Deixa a foto redonda */
-    border: 2px solid white; /* Borda para destacar a foto */
+    width: 300px;
+    height: 300px;
+    border-radius: 0%; /* Deixa a foto redonda */
+    border: 2px solid black; /* Borda para destacar a foto */
 }
 
 /* Nome e título centralizados */
@@ -54,7 +54,7 @@ body, html {
 }
 
 .center-content h1 {
-    font-size: 3em; /* Ajuste conforme necessário */
+    font-size: 8em; /* Ajuste conforme necessário */
     margin: 0;
 }
 
