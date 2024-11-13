@@ -27,8 +27,8 @@ body, html {
 /* Foto e cidade no canto superior esquerdo */
 .top-left {
     position: absolute;
-    top: 20px; /* Ajuste conforme necessário */
-    left: 20px;
+    top: 50px; /* Ajuste conforme necessário */
+    left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,8 +41,8 @@ body, html {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 5px; /* Ajuste para bordas quadradas */
     border: 2px solid black;
 }
@@ -51,16 +51,16 @@ body, html {
 .center-content {
     text-align: center;
     max-width: 80%; /* Limita largura para centralizar melhor */
-    margin-top: 100px; /* Ajuste para espaçamento conforme necessário */
+    margin-top: 10px; /* Ajuste para espaçamento conforme necessário */
 }
 
 .center-content h1 {
-    font-size: 3em; /* Ajuste conforme necessário */
+    font-size: 5em; /* Ajuste conforme necessário */
     margin: 0;
 }
 
 .center-content p {
-    font-size: 2em;
+    font-size: 4em;
     margin: 10px 0;
 }
 
