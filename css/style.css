@@ -28,14 +28,14 @@ body, html {
 .top-left {
     position: absolute;
     top: 50px; /* Ajuste conforme necessário */
-    left: 50px;
+    left: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .cidade {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: black;
     margin-bottom: 5px;
 }
@@ -51,7 +51,7 @@ body, html {
 .center-content {
     text-align: center;
     position: absolute;
-    top: 50px; /* Posiciona o texto próximo ao topo da seção */
+    top: 150px; /* Posiciona o texto próximo ao topo da seção */
     left: 50%; /* Centraliza horizontalmente */
     transform: translateX(-50%); /* Corrige a posição horizontal */
 }
