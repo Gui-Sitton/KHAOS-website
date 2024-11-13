@@ -51,6 +51,11 @@ body, html {
 /* Nome e título centralizados */
 .center-content {
     text-align: center;
+    position: absolute; /* Posiciona em relação ao contêiner pai */
+    top: 0; /* Coloca no topo */
+    left: 50%; /* Posiciona horizontalmente no centro */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    margin-top: 20px; /* Ajuste conforme necessário para espaçamento */
 }
 
 .center-content h1 {
