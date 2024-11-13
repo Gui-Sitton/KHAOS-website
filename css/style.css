@@ -52,7 +52,7 @@ body, html {
     text-align: center;
     position: absolute;
     top: 150px; /* Posiciona o texto próximo ao topo da seção */
-    left: 55%; /* Centraliza horizontalmente */
+    left: 40%; /* Centraliza horizontalmente */
     transform: translateX(-50%); /* Corrige a posição horizontal */
 }
 
