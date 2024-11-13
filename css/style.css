@@ -15,13 +15,13 @@ body, html {
 }
 /* Página 1 com a primeira imagem de fundo */
 .section.intro {
-    background: url('../assets/img/background1.jpg') no-repeat center center;
+    background: url('../assets/images/background1.jpg') no-repeat center center;
     background-size: cover;
     color: white; /* Cor do texto para contraste */
 }
 /* Páginas 2 a 5 com a segunda imagem de fundo */
 .section.secondary {
-    background: url('../assets/img/background2.jpg') no-repeat center center;
+    background: url('../assets/images/background2.jpg') no-repeat center center;
     background-size: cover;
     color: white; /* Ajuste a cor do texto para contraste */
 }
