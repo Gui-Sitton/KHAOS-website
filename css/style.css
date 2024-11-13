@@ -42,8 +42,8 @@ body, html {
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 0%; /* Deixa a foto redonda */
     border: 2px solid black; /* Borda para destacar a foto */
 }
@@ -59,7 +59,7 @@ body, html {
 }
 
 .center-content p {
-    font-size: 3em;
+    font-size: 5em;
     margin: 5px 0 0;
 }
 
