@@ -50,8 +50,10 @@ body, html {
 /* Nome e título centralizados */
 .center-content {
     text-align: center;
-    max-width: 80%; /* Limita largura para centralizar melhor */
-    margin-top: 10px; /* Ajuste para espaçamento conforme necessário */
+    position: absolute;
+    top: 20px; /* Posiciona o texto próximo ao topo da seção */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Corrige a posição horizontal */
 }
 
 .center-content h1 {
