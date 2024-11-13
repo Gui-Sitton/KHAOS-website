@@ -1,0 +1,40 @@
+/* Estilos básicos para layout contínuo e carrosséis */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Página 1 com a primeira imagem de fundo */
+.section.intro {
+    background: url('../assets/img/background1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white; /* Cor do texto para contraste */
+}
+/* Páginas 2 a 5 com a segunda imagem de fundo */
+.section.secondary {
+    background: url('../assets/img/background2.jpg') no-repeat center center;
+    background-size: cover;
+    color: white; /* Ajuste a cor do texto para contraste */
+}
+/* Estilo dos carrosséis */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+.carousel-item {
+    min-width: 300px;
+    background: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
