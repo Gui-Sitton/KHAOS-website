@@ -65,12 +65,12 @@ body, html {
 }
 
 .center-content h1 {
-    font-size: 80px; /* Ajuste conforme necessário */
+    font-size: 5em; /* Ajuste conforme necessário */
     margin: 0;
 }
 
 .center-content p {
-    font-size: 60px;
+    font-size: 4em;
     margin: 10px 0;
 }
 
