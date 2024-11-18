@@ -57,21 +57,53 @@ body, html {
 /* Nome e título centralizados */
 .center-content {
     text-align: center;
-    position: absolute;
-    margin-top: -30%;
-    margin-right: -15%;
-    
-    
+    position: relative;
+    margin: 0; /* Remove margens fixas */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralização */
+    width: 100%; /* Ocupa toda a largura */
+    padding: 20px; /* Espaçamento interno para mobile */
 }
 
 .center-content h1 {
-    font-size: 5em; /* Ajuste conforme necessário */
+    font-size: 3em; /* Tamanho padrão para desktops */
     margin: 0;
 }
 
 .center-content p {
-    font-size: 4em;
+    font-size: 2em; /* Tamanho padrão para desktops */
     margin: 10px 0;
+}
+
+/* Media queries para telas menores */
+@media (max-width: 1024px) {
+    .center-content h1 {
+        font-size: 2.5em; /* Ajusta o tamanho para tablets */
+    }
+    .center-content p {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .center-content {
+        padding: 10px; /* Ajusta o espaçamento interno */
+    }
+    .center-content h1 {
+        font-size: 2em; /* Ajusta para smartphones */
+    }
+    .center-content p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .center-content h1 {
+        font-size: 1.5em; /* Tamanho reduzido para telas muito pequenas */
+    }
+    .center-content p {
+        font-size: 1.2em;
+    }
 }
 
 /* Estilos para os ícones de redes sociais */
